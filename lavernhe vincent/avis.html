@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <link rel="stylesheet" type="text/css" href="style/style.css"/>
+  <title>Vincent Lavernhe | Avis</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8"/>
+  <meta name="keywords" content="Site Web, Vincent Lavernhe, étudiant, informatique, première année, Iut" />
+  <meta name="description" content="Page Web de Vincent Lavernhe" />
+  <meta name="copyright" content="Vincent Lavernhe" />
+  <link rel="SHORTCUT ICON" href="images/informatique.png" />
+  <balise id="hautdepage"></balise>
+</head>
+	<body>
+    <header>
+      <nav>
+        <ul class="menu">
+          <li><a class="colonne" href="index.html">Acceuil</a></li>
+          <li><a class="colonne" href="avis.html">Avis</a></li>
+          <li><a class="colonne" href="Projet.html">Projets</a></li>
+          <a href="index.html"><img class="favicon" src="images/informatique.png" alt="icone" /></a>
+        </ul>
+      </nav>
+    </header>
+    <main>
+       <section class="avis">
+          <h1 class="titre_avis">Votre avis</h2>
+          <form id="form" action="mailto:vincentlavernhe@free.fr?content-type=text/html&amp;subject=Site%20Web" method="post" enctype="text/plain">
+            <fieldset>
+             <legend> Vos coordonnées : </legend>
+             <label for="prenom">Votre prénom :</label><input type="text" name="Prénom" size="20"maxlength="40" value="" class="prenom" />
+             <label for="nom">Votre Nom :</label><input type="text" name="Nom" size="20"maxlength="40" value="" class="nom" />
+             <label for="mail">Votre email :</label><input type="text" name="mail" size="40"maxlength="80" value="" class="mail" />
+             <label for="hanche">Votre tour de hanche :</label><input type="text" name="hanche" size="83.6"maxlength="90" value="" class="hanche" />
+             <label for="pointure">Votre pointure :</label><input type="text" name="pointure" size="40"maxlength="45" value="" class="pointure" alt="votre pointure relative à votre taille de hmhm ... pardon je m'égare"/>
+            </fieldset>
+            <fieldset>
+             <legend>Votre avis :</legend>
+             <label for="utilise">Comment avez-vous trouvé le site : </label>
+                <select name="utilise" class="utilise">
+                <option value="bof">bof</option>
+                <option value="pas mal">pas mal</option>
+                <option value="bon">bon</option>
+                </select>
+                <label for="utilise">Vos commentaires : </label>
+                <textarea name="comments" class="comments" cols="60" rows="5">
+                </textarea>
+            </fieldset>
+             <p>
+             <input type="submit" value="Envoyer" />
+             <input type="reset" value="Annuler" />
+            </form>
+       </section>
+    </main>
+  </body>
+  <div class="footer">
+    <p class="copyright">© 2019 Site de Vincent Lavernhe. Tous droits réservés.  </p>
+  </div>
+</html>

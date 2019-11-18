@@ -1,0 +1,329 @@
+/* Import Police */
+ @import url('https://fonts.googleapis.com/css?family=Yellowtail');
+ @import url('https://fonts.googleapis.com/css?family=Gamja+Flower');
+ @import url('https://fonts.googleapis.com/css?family=Charm');
+ @import url('https://fonts.googleapis.com/css?family=Dosis|Muli');
+ @import url('https://fonts.googleapis.com/css?family=Acme');
+ @import url('https://fonts.googleapis.com/css?family=Noto+Serif+SC');
+ /* Toutes les pages  */
+
+
+header {
+  z-index: 2;
+}
+
+body header nav .menu .colonne {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+body header nav .menu .favicon {
+  margin-left: 96%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #002f4b;
+}
+
+body .bkg-img {
+  width: 100%;
+  height: 100%;
+  background: url('../images/backround.png') center center no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position :absolute;
+  animation: fondu 3s infinite;
+}
+
+body .main {
+    position :relative;
+    animation: mymove 2s ;
+    }
+    @keyframes mymove {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+
+/* FIN Toutes les pages  */
+
+/* Page D'acceuil */
+
+.main .titre_acceuil {
+  text-align: center;
+  margin-top: 18%;
+  font-family: 'Acme', sans-serif;
+  font-size: 60px;
+}
+
+/* Description */
+
+.main .description #wrapper .titre_descrition {
+  font-family: 'Yellowtail', cursive;
+}
+
+.main {
+  background: url('../images/fondbleu.png') center center no-repeat;
+  margin-top: 25%;
+}
+
+.main .description #wrapper {
+  padding-left: 15%;
+  margin-top: 27%;
+}
+
+.main .description #wrapper .image-moi{
+  float: right;
+  width: 40%;
+  overflow: hidden;
+}
+
+.main .description #wrapper .corps {
+    width: 35%;
+    border: 1px solid black;
+    text-align: justify;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    overflow: auto;
+    word-wrap: break-word;
+    float: left;
+    background-color: white;
+    font-family: 'Dosis', sans-serif;
+}
+
+#wrapper .image-moi:hover img {
+  transform: scale(3.5);
+  transition: 0.5s ease-in-out;
+}
+
+/* FIN Description */
+
+/* Coordonnées */
+
+.main .Coo {
+  margin-top: 38%;
+  margin-left: 15%;
+}
+
+.titre_coo {
+  font-family: 'Yellowtail', cursive;
+}
+
+.form {
+ font-family:"trebuchet ms",sans-serif;
+ font-size:90%;
+ background-color:#FAFAFA;
+ padding:10px;
+ width:350px;
+ }
+
+ .Coo .Coo2 .instagram {
+   margin-top: 5%;
+   margin-left: 35%;
+ }
+
+ .Coo .Coo2 nav .nom_instagram {
+   margin-left: 34%;
+ }
+
+ .Coo .Coo2 {
+   font-family: 'Noto Serif SC', serif;
+ }
+/* FIN Coordonnées */
+
+ /* FIN Page D'acceuil */
+
+/* Votre avis */
+
+.avis {
+ margin-left: 15%;
+ margin-right: 15%;
+}
+
+.titre_avis {
+  font-family: 'Yellowtail', cursive;
+}
+
+main section form fieldset {
+ padding:20px;
+ margin-bottom:10px;
+ }
+ html body main section form legend {
+ color:#a0522d;
+ font-weight:bold
+ }
+html body main section form label {
+ margin-top:20px;
+ display:block;
+ }
+html body main section form label.inline {
+ display:inline
+ }
+html body main section form input {
+ border:1px solid black;
+ background-color:#A6BEDE;
+ }
+html body main section form input[type=radio] {
+ margin-right:50px;
+ background-color:transparent;
+ border:none;
+ }
+html body main section form select, option {
+ background-color:#A6BEDE;
+ }
+html body main section form textarea {
+ border:1px solid black;
+ background-color:#A6BEDE;
+ }
+/* FIN Votre avis  */
+
+/* Footer */
+
+.footer {
+   position: absolute;
+   width: 100%;
+   background-color: #002f4b;
+   color: white;
+   text-align: center;
+}
+
+.copyright {
+  font-family: 'Charm', cursive;
+}
+
+/* Projets */
+.projets_titre {
+  font-family: 'Yellowtail', cursive;
+  margin-left: 15%;
+}
+.legende_com {
+  font-family: 'Noto Serif SC', serif;
+}
+.legende_ppp {
+  font-family: 'Noto Serif SC', serif;
+}
+
+#download {
+  height: 90vh;
+}
+/* container - col */
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+div[class^="col-"] {
+  display: inline-block;
+	padding: 0 15px;
+}
+
+.col-2 {
+  margin-left: 15%;
+  width: 20%;
+}
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+  .container {
+      max-width: 992px;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  .container {
+      max-width: 768px;
+  }
+	.col-4 {
+	  width: 50%;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+  .container {
+      max-width: 480px;
+  }
+	.col-4 {
+	  width: 100%;
+	}
+
+	.col-3 {
+	  width: 100%
+	}
+
+	.col-2 {
+	  width: 100%;
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+  .container {
+      max-width: 320px;
+  }
+	.col-4 {
+	  width: 100%;
+	}
+
+	.col-3 {
+	  width: 100%
+	}
+
+	.col-2 {
+	  width: 100%;
+	}
+}
+
+@media (min-width: 480px) and (max-width: 780px) {
+  #wrapper{float: none;}
+  .colonne{float: none;}
+}
+
+@media (min-width: 781px) and (max-width: 979px){
+  #wrapper{float: none;}
+  .colonne{float: none;}
+  .titre_acceuil{font-size: 10px;}
+}

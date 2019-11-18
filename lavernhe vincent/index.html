@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <link rel="stylesheet" type="text/css" href="style/style.css"/>
+	  <title>Vincent Lavernhe | Acceuil</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8"/>
+    <meta name="keywords" content="Site Web, Vincent Lavernhe, étudiant, informatique, première année, Iut" />
+    <meta name="description" content="Page Web de Vincent Lavernhe" />
+    <meta name="copyright" content="Vincent Lavernhe" />
+    <link rel="SHORTCUT ICON" href="images/informatique.png" />
+    <balise id="hautdepage"></balise>
+	</head>
+	<body>
+    <div class="bkg-img"></div>
+    <header>
+      <nav>
+        <ul class="menu">
+          <li><a class="colonne" href="index.html">Acceuil</a></li>
+          <li><a class="colonne" href="avis.html">Avis</a></li>
+          <li><a class="colonne" href="Projet.html">Projets</a></li>
+          <a href="index.html"><img class="favicon" src="images/informatique.png" alt="icone" /></a>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+     <h1 class="titre_acceuil">Vincent Lavernhe</h1>
+     <section class="description">
+      <div id="wrapper">
+        <h2 class="titre_descrition">Description</h2>
+        <p class="corps">
+          Je m'appelle Vincent Lavernhe, je suis étudiant en première année de DUT informatique à Aix-en-Provence. Je vous présente mon site web réalisé dans le cadre de mon projet web de S1. Si je devais vous parler de moi je dirai que j'ai obtenu un bac SSI, que je suis un fier joueur de rugby à l'équipe universitaire et que j'aime beaucoup passer du temps avec mes amis que ça soit dans la vie de tous les jours ou en réseau.
+          En ce qui concerne mon caractère je suis quelqu'un de souriant, assidu et qui sait faire preuve de rigueur dans son travail. Je suis tout autant que le reste un informatien amateur qui s'implique dans son travail et qui a envi d'apprendre. </br>
+          Je vous laisse donc visiter mon site web !
+        </p>
+        <figure class="image-moi">
+          <a class="moi" href="images/moi min.jpg"><img src="images/moi min.jpg" alt="Photo de moi" /></a>
+          <figcaption class="photo">Photo à caractère humouristique</figcaption>
+        </figure>
+      </div>
+     </section>
+     <section class="Coo">
+      <h2 class="titre_coo">Mes coordonnées</h2>
+      <div class="Coo2">
+        <p>Adresse : allée de l'amiral Courbet</p>
+        <p>Code postal : 13470</p>
+        <p>Ville : Carnoux-en-Provence</p>
+        <p>Téléphone : 06 52 17 55 81</p>
+        <p class="mail">Voici mon adresse électronique vous pouvez m'envoyer un mail à cette adresse pour tout renseignement : vincentlavernhe@free.fr </p><form id="form" action="mailto:vincentlavernhe@free.fr?content-type=text/html&amp;subject=Site%20Web" method="post" enctype="text/plain"><p><input class="message" type="submit" value="Envoyer" /></p>
+        <img class="instagram" src="images/instagram.png" alt="instagram" />
+        <nav>
+         <a class="nom_instagram" href="https://www.instagram.com/vincent_lavernhe/?hl=fr">@vincent_lavernhe</a></br>
+         <a href="#hautdepage"> Retourner en haut de la page </a>
+        </nav>
+      </div>
+     </section>
+   </main>
+  </body>
+  <footer class="footer">
+    <p class="copyright">© 2019 Site de Vincent Lavernhe. Tous droits réservés. <a href="#" onclick="changeCSS(); return false;">Changer de style</a> </p>
+  </footer>
+  <script>
+function changeCSS() {
+  document.querySelector("body").classList.toggle("theme2");
+}
+</script>
+</html>
